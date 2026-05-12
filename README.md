@@ -117,7 +117,7 @@ VideoGameSales/
 │
 ├── data/
 │   ├── processed/             
-│      └── VideoGameSales_Processed_Full.csv    # Processed dataset
+│      └── VideoGameSalesProcessedFull.csv    # Processed dataset
 │
 │   └── raw/                   
 │      └── VideoGameSales.csv                   # Original raw dataset
@@ -130,7 +130,7 @@ VideoGameSales/
 │
 ├── visualizations/
 │   ├── dashboard/
-│     ├── Critic_User.png                       # Critic and user metrics
+│     ├── CriticUser.png                       # Critic and user metrics
 │     ├── PlatformGenre.png                     # Platforming genre performance
 │     ├── PlatformNegative.png                  # Negative correlating platforms
 │     ├── PlatformPositive.png                  # Positive correlating platforms
