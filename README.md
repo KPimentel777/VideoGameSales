@@ -98,18 +98,42 @@ The analysis focused on:
 - The publisher Nintendo has the largest positive impact on global sales
 - Higher critic and user review scores were generally associated with stronger global sales performance
 - Classic Nintendo consoles contain a small amount of games within the dataset but carry a large amount of sales
-- Platform games demonstrated strong sales performance compared to several other genres
+- Platform games consistently outperform other genres in global sales, suggesting stronger mainstream appeal and franchise longevity
 
 ---
 
-## Visualizations
+## Heatmap
 
+![heatmap](visualizations/worksheet/Heatmap.png)
+---
+> The heatmap above highlights different variables and how heavily they contribute to global sales in either a negative or positive way.
+> While the heatmap shows individual correlations between variables and sales, it does not capture interaction effects where combinations of features (e.g., platform + genre) have a stronger impact.
 ---
 
-## Tableau Dashboard
+## Tableau Dashboards
 
+[![Dashboard](visualizations/dashboard/CriticUser.png)](https://public.tableau.com/app/profile/kevin.pimentel7409/viz/VideoGameCriticUserDashboard/CriticUser)
 ---
-
+> These visualizations highlight that video games with higher user and critic engagement and ratings translate into higher global sales.
+> Games with moderate critic and user reviews are likely more mainstream releases with a broader appeal, while games with fewer reviews are likely to be niche or heavily scrutinized titles that don't necessarily translate into higher sales.
+---
+[![Dashboard](visualizations/dashboard/PlatformGenre.png)](https://public.tableau.com/app/profile/kevin.pimentel7409/viz/VideoGamePlatformingGenreDashboard/PlatformGenre)
+---
+> Compared to all other video game geners, platforming has consistently shown powerful user engagement and interest.
+---
+[![Dashboard](visualizations/dashboard/PlatformNegative.png)](https://public.tableau.com/app/profile/kevin.pimentel7409/viz/VideoGameNegativePlatformDashboard/PlatformNegative)
+---
+> The above consoles have a wide range when looking at the amount of titles per platform. Despite this the above consoles tend to fall short on global sales when focusing on the relative amount of video game releases.
+---
+[![Dashboard](visualizations/dashboard/PlatformPositive.png)](https://public.tableau.com/app/profile/kevin.pimentel7409/viz/VideoGamePositivePlatformDashboard/PlatformPositive)
+---
+> In the above charts we see that despite the small amount of game titles within the Gameboy and Nintendo Entertainment System, the amount of global sales are relatively high.
+---
+[![Dashboard](visualizations/dashboard/Publishers.png)](https://public.tableau.com/app/profile/kevin.pimentel7409/viz/VideoGamePublisherDashboard/Publishers)
+---
+> With this dashboard we see that Nintendo as a video game publisher has had consistent global sales while publishers outside of the top 10 do very poorly.
+> Nintendo with only 706 titles has 1,789 million copies sold while the publishers in the 'other' category have collectively had 8504 titles with only 2,656 million copies sold.
+---
 ## Project Structure
 
 ```text
@@ -117,8 +141,8 @@ VideoGameSales/
 │
 ├── data/
 │   ├── processed/             
-│      └── VideoGameSalesProcessedFull.csv    # Processed dataset
-│
+│   │  └── VideoGameSalesProcessedFull.csv      # Processed dataset
+│   │
 │   └── raw/                   
 │      └── VideoGameSales.csv                   # Original raw dataset
 │
@@ -130,12 +154,12 @@ VideoGameSales/
 │
 ├── visualizations/
 │   ├── dashboard/
-│     ├── CriticUser.png                       # Critic and user metrics
-│     ├── PlatformGenre.png                     # Platforming genre performance
-│     ├── PlatformNegative.png                  # Negative correlating platforms
-│     ├── PlatformPositive.png                  # Positive correlating platforms
-│     └── Publishers.png                        # Publisher metrics
-│
+│   │ ├── CriticUser.png                        # Critic and user metrics
+│   │ ├── PlatformGenre.png                     # Platforming genre performance
+│   │ ├── PlatformNegative.png                  # Negative correlating platforms
+│   │ ├── PlatformPositive.png                  # Positive correlating platforms
+│   │ └── Publishers.png                        # Publisher metrics
+│   │
 │   └── worksheet/
 │     ├── CriticCount.png                       # Critic review count
 │     ├── CriticScore.png                       # Critic review scores
@@ -155,12 +179,6 @@ VideoGameSales/
 │
 └── requirements.txt                            # Project dependencies
 ```
-
----
-
-## Future Improvements
-
-- Build a more advanced Tableau dashboard
 
 ---
 
