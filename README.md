@@ -113,14 +113,22 @@ The analysis focused on:
 ## Project Structure
 
 ```text
-video-game-sales-analysis/
+VideoGameSales/
 │
 ├── data/
-├── notebooks/
-├── visuals/
-├── tableau/
-├── README.md
-└── requirements.txt
+│   ├── processed/             # Processed dataset
+│   └── raw/                   # Original raw dataset
+│
+├── scripts/
+│   ├── VideoGameSales.py      # Main Python script
+│   ├── VideoGameSalesFF.py    # Forward Feature script
+│   ├── VideoGameSalesFI.py    # Feature Importance script
+│   └── VideoGameSalesRFE.py   # Recursive Feature Elimination script
+│
+├── visualizations/
+│
+├── README.md                  # Project Documentation
+└── requirements.txt           # Project dependencies
 ```
 
 ---
