@@ -54,7 +54,7 @@ The following preprocessing steps were completed:
 - Handled missing values using median imputation
 - Converted `User_Score` to numeric format
 - Applied one-hot encoding to categorical variables
-- Grouped low-frequency publishers into an `"Other"` category
+- Grouped low-frequency publishers into an `"Other"` category (Publishers outside of the top 10 are set to 'Other')
 - Removed redundant and non-predictive features
 - Standardized numerical variables using `StandardScaler`
 - Selected significant predictors using feature selection techniques
@@ -116,19 +116,44 @@ The analysis focused on:
 VideoGameSales/
 │
 ├── data/
-│   ├── processed/             # Processed dataset
-│   └── raw/                   # Original raw dataset
+│   ├── processed/             
+│      └── VideoGameSales_Processed_Full.csv    # Processed dataset
+│
+│   └── raw/                   
+│      └── VideoGameSales.csv                   # Original raw dataset
 │
 ├── scripts/
-│   ├── VideoGameSales.py      # Main Python script
-│   ├── VideoGameSalesFF.py    # Forward Feature script
-│   ├── VideoGameSalesFI.py    # Feature Importance script
-│   └── VideoGameSalesRFE.py   # Recursive Feature Elimination script
+│   ├── VideoGameSales.py                       # Main Python script
+│   ├── VideoGameSalesFF.py                     # Forward Feature script
+│   ├── VideoGameSalesFI.py                     # Feature Importance script
+│   └── VideoGameSalesRFE.py                    # Recursive Feature Elimination script
 │
 ├── visualizations/
+│   ├── dashboard/
+│     ├── Critic_User.png                       # Critic and user metrics
+│     ├── PlatformGenre.png                     # Platforming genre performance
+│     ├── PlatformNegative.png                  # Negative correlating platforms
+│     ├── PlatformPositive.png                  # Positive correlating platforms
+│     └── Publishers.png                        # Publisher metrics
 │
-├── README.md                  # Project Documentation
-└── requirements.txt           # Project dependencies
+│   └── worksheet/
+│     ├── CriticCount.png                       # Critic review count
+│     ├── CriticScore.png                       # Critic review scores
+│     ├── GenrePlatform.png                     # Platforming genre sales
+│     ├── Heatmap.png                           # Heatmap for each metric against global sales
+│     ├── PlatformGB.png                        # Nintendo Gameboy sales
+│     ├── PlatformNES.png                       # Nintendo Entertainment System sales
+│     ├── PlatformPC.png                        # Personal Computer sales
+│     ├── PlatformWii.png                       # Nintendo Wii sales
+│     ├── Platformx360.png                      # Microsoft Xbox 360 sales
+│     ├── PublisherNintendo.png                 # Nintendo Publishing sales
+│     ├── PublisherOther.png                    # Other Publishing Sales (Outside of the top 10)
+│     ├── UserCount.png                         # User review count
+│     └── UserScore.png                         # User review scores
+│
+├── README.md                                   # Project Documentation
+│
+└── requirements.txt                            # Project dependencies
 ```
 
 ---
